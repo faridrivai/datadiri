@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Keuangan UNPAM - Full Semester</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .overflow-x-auto::-webkit-scrollbar { height: 5px; }
+        .overflow-x-auto::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .font-kecil { font-size: 11px; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans antialiased text-slate-700">
+
+    <header class="bg-[#2196F3] text-white p-4 sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-university text-lg"></i>
+                <h1 class="font-bold text-xs md:text-sm tracking-widest uppercase">Universitas Pamulang</h1>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="text-right hidden sm:block">
+                    <p class="text-[10px] opacity-80">Selamat Datang,</p>
+                    <p class="text-xs font-bold uppercase">Mahasiswa UNPAM</p>
+                </div>
+                <i class="fas fa-user-circle text-2xl"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-6">
+        
+        <div class="bg-white p-4 border-b rounded-t-xl shadow-sm flex justify-between items-end">
+            <div>
+                <h2 class="text-blue-500 font-black text-xs uppercase tracking-wider">Laporan Keuangan</h2>
+                <p class="text-[10px] text-slate-400">Update terakhir: 29 April 2026</p>
+            </div>
+            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-[10px] font-bold">SEMESTER GENAP</span>
+        </div>
+
+        <div class="bg-white p-4 mb-6 rounded-b-xl shadow-sm border-x border-b">
+            
+            <div class="flex flex-col sm:flex-row gap-3 mb-8">
+                <div class="relative w-full sm:w-72">
+                    <select class="appearance-none border border-slate-200 p-2.5 rounded-lg text-xs md:text-sm w-full outline-none focus:ring-2 focus:ring-blue-400 bg-slate-50 cursor-pointer">
+                        <option>Semester 2 (Aktif)</option>
+                        <option>Semester 1</option>
+                    </select>
+                    <i class="fas fa-chevron-down absolute right-3 top-3.5 text-slate-400 pointer-events-none text-[10px]"></i>
+                </div>
+                <button class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-2.5 rounded-lg text-xs font-bold transition-all shadow-lg shadow-emerald-100 flex items-center justify-center gap-2">
+                    <i class="fas fa-print"></i> CETAK TAGIHAN
+                </button>
+            </div>
+
+            <section class="mb-10">
+                <h3 class="text-slate-800 font-bold text-xs mb-4 flex items-center gap-2">
+                    <span class="w-1 h-4 bg-blue-500 rounded-full"></span>
+                    RINCIAN TAGIHAN SEMESTER
+                </h3>
+                
+                <div class="overflow-x-auto rounded-xl border border-slate-100">
+                    <table class="w-full min-w-[800px] text-left font-kecil">
+                        <thead class="bg-slate-50 text-slate-500 border-b">
+                            <tr>
+                                <th class="p-4 font-semibold uppercase text-center w-12">No</th>
+                                <th class="p-4 font-semibold uppercase">Item Pembayaran</th>
+                                <th class="p-4 font-semibold uppercase text-right">Nominal</th>
+                                <th class="p-4 font-semibold uppercase text-center">Status Pembayaran</th>
+                                <th class="p-4 font-semibold uppercase">Tgl. Transaksi</th>
+                                <th class="p-4 font-semibold uppercase text-center">Via</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-50">
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 text-center">1</td>
+                                <td class="p-4 font-bold text-slate-700">REGISTRASI SEMESTER</td>
+                                <td class="p-4 text-right">Rp. 400.000</td>
+                                <td class="p-4 text-center"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-md font-bold text-[10px]"><i class="fas fa-check-circle mr-1"></i> LUNAS</span></td>
+                                <td class="p-4 text-slate-500">02/02/2026</td>
+                                <td class="p-4 text-center text-slate-400 font-medium tracking-tighter">BANK BNI</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 text-center">2</td>
+                                <td class="p-4 font-bold text-slate-700">ANGSURAN KE-2</td>
+                                <td class="p-4 text-right">Rp. 250.000</td>
+                                <td class="p-4 text-center"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-md font-bold text-[10px]"><i class="fas fa-check-circle mr-1"></i> LUNAS</span></td>
+                                <td class="p-4 text-slate-500">15/03/2026</td>
+                                <td class="p-4 text-center text-slate-400 font-medium tracking-tighter">BANK BNI</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 text-center">3</td>
+                                <td class="p-4 font-bold text-slate-700">ANGSURAN KE-3</td>
+                                <td class="p-4 text-right">Rp. 250.000</td>
+                                <td class="p-4 text-center"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-md font-bold text-[10px]"><i class="fas fa-check-circle mr-1"></i> LUNAS</span></td>
+                                <td class="p-4 text-slate-500">10/04/2026</td>
+                                <td class="p-4 text-center text-slate-400 font-medium tracking-tighter">BANK BNI</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 text-center">4</td>
+                                <td class="p-4 font-bold text-slate-700">ANGSURAN KE-4</td>
+                                <td class="p-4 text-right">Rp. 250.000</td>
+                                <td class="p-4 text-center"><span class="bg-green-100 text-green-700 px-3 py-1 rounded-md font-bold text-[10px]"><i class="fas fa-check-circle mr-1"></i> LUNAS</span></td>
+                                <td class="p-4 text-slate-500">28/04/2026</td>
+                                <td class="p-4 text-center text-slate-400 font-medium tracking-tighter">BANK BNI</td>
+                            </tr>
+                            <tr class="bg-blue-50/30">
+                                <td class="p-4 text-center">5</td>
+                                <td class="p-4 font-black text-blue-700 uppercase">UTS (Ujian Tengah Semester)</td>
+                                <td class="p-4 text-right font-black text-blue-700">Rp. 350.000</td>
+                                <td class="p-4 text-center"><span class="bg-green-500 text-white px-3 py-1 rounded-md font-bold text-[10px] shadow-sm shadow-green-200"><i class="fas fa-check-double mr-1"></i> LUNAS</span></td>
+                                <td class="p-4 text-blue-600 font-semibold">28/04/2026</td>
+                                <td class="p-4 text-center text-blue-400 font-medium tracking-tighter">BANK BNI</td>
+                            </tr>
+
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 text-center">6</td>
+                                <td class="p-4 font-bold text-slate-700">ANGSURAN KE-5</td>
+                                <td class="p-4 text-right">Rp. 200.000</td>
+                                <td class="p-4 text-center"><span class="bg-rose-50 text-rose-600 px-3 py-1 rounded-md font-bold text-[10px] border border-rose-100"><i class="far fa-clock mr-1"></i> BELUM LUNAS</span></td>
+                                <td class="p-4 text-slate-300">-</td>
+                                <td class="p-4 text-center text-slate-300">-</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 text-center">7</td>
+                                <td class="p-4 font-bold text-slate-700">ANGSURAN KE-6</td>
+                                <td class="p-4 text-right">Rp. 200.000</td>
+                                <td class="p-4 text-center"><span class="bg-rose-50 text-rose-600 px-3 py-1 rounded-md font-bold text-[10px] border border-rose-100"><i class="far fa-clock mr-1"></i> BELUM LUNAS</span></td>
+                                <td class="p-4 text-slate-300">-</td>
+                                <td class="p-4 text-center text-slate-300">-</td>
+                            </tr>
+                            <tr class="bg-slate-50/50">
+                                <td class="p-4 text-center font-bold">8</td>
+                                <td class="p-4 font-bold text-slate-800 uppercase">UAS (Ujian Akhir Semester)</td>
+                                <td class="p-4 text-right font-bold text-slate-800">Rp. 250.000</td>
+                                <td class="p-4 text-center"><span class="bg-rose-50 text-rose-600 px-3 py-1 rounded-md font-bold text-[10px] border border-rose-100"><i class="far fa-clock mr-1"></i> BELUM LUNAS</span></td>
+                                <td class="p-4 text-slate-300">-</td>
+                                <td class="p-4 text-center text-slate-300">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-slate-800 font-bold text-xs mb-4 flex items-center gap-2 italic">
+                    <i class="fas fa-tags text-blue-500"></i> TAGIHAN LAIN-LAIN
+                </h3>
+                <div class="overflow-x-auto rounded-xl border border-slate-100">
+                    <table class="w-full min-w-[500px] text-left font-kecil">
+                        <thead class="bg-slate-50 text-slate-500 border-b">
+                            <tr>
+                                <th class="p-4 font-semibold uppercase">Kode Virtual</th>
+                                <th class="p-4 font-semibold uppercase">Keterangan</th>
+                                <th class="p-4 font-semibold uppercase text-right">Total Tagihan</th>
+                                <th class="p-4 font-semibold uppercase text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-slate-50/50 transition">
+                                <td class="p-4 font-mono text-blue-600 font-bold">2520121517400701</td>
+                                <td class="p-4 font-bold text-slate-700">SIDANG SKRIPSI / TA</td>
+                                <td class="p-4 text-right font-bold">Rp. 1.300.000</td>
+                                <td class="p-4 text-center">
+                                    <span class="bg-rose-50 text-rose-600 px-3 py-1 rounded-md font-bold text-[10px] border border-rose-100">BELUM LUNAS</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <div class="bg-white border-l-4 border-amber-400 p-4 rounded-r-xl shadow-sm flex items-start gap-4">
+            <div class="bg-amber-100 p-2 rounded-full hidden sm:block">
+                <i class="fas fa-lightbulb text-amber-600"></i>
+            </div>
+            <div class="text-[10px] md:text-[11px] text-slate-500 leading-relaxed">
+                <p class="font-bold text-slate-700 mb-1">Informasi Pembayaran:</p>
+                <ul class="list-disc ml-4 space-y-1">
+                    <li>Gunakan <span class="font-bold text-blue-600">Nomor Virtual Account</span> di atas untuk pembayaran via Mobile Banking atau ATM.</li>
+                    <li>Status pembayaran otomatis terupdate dalam <span class="text-emerald-600 font-bold">1x24 jam</span> setelah transaksi berhasil.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
